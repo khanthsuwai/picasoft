@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car GPS</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.navbar{
+			background-color: skyblue;
+			height: 70px;
+		}
+		.nav{
+			margin-left: 400px;
+		}
+		.nav ul{
+			list-style-type: none;
+			display: inline-flex;
+			margin-top: 10px;
+		}
+		.nav ul li{
+			text-align: center;
+			width: 80px;
+			padding: 3px;
+			margin:10px;
+			cursor: pointer;
+		}
+		.nav ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		.dropdown{
+			display: none;
+			width: 100px;
+			background-color: white;
+			margin-top: 28px;
+		}
+		.nav ul li:hover .dropdown{
+			display:block;
+			position: absolute;
+		}
+		.nav ul li:hover .dropdown ul{
+			display: block;
+			list-style-type: none;
+		}
+		.title{
+			margin-top: -50px;
+			margin-left: 90px;
+		}
+		.search{
+			margin-left: 1060px;
+			margin-top: -20px;
+		}
+		.bar{
+			background-color: #d3dae8;
+			width: 1350px;
+			height: 60px;
+			margin-top: 24px;
+		}
+		.barsar{
+			font-size: 20px;
+			padding: 20px;
+			margin-top: 20px;
+			margin-left: 70px;
+		}
+		.ahref{
+			text-decoration: none;
+		}
+		.body1{
+			width: 1350px;
+			height: 1600px;
+			background-color:#e6e4dc; 
+		}
+		.truck{
+			margin-left: 90px;
+			margin-top: 70px;
+			float: left;
+		}
+		.specification{
+			font-size: 40px;
+			margin-left: 750px;
+			padding: 20px;
+		}
+		.mobile{
+			font-size: 21px;
+			color: gray;
+			padding: 50px;
+			margin-left: 730px;
+		}
+		.data{
+			font-size: 40px;
+			margin-left: 750px;
+			padding: 20px;
+			clear: both;
+		}
+		.special{
+			font-size: 21px;
+			color: gray;
+			padding: 50px;
+			margin-left: 730px;
+			clear: both;
+		}
+		.phone{
+			margin-left: 90px;
+			margin-top: 70px;
+			float: left;
+		}
+		.power{
+			font-size: 40px;
+			margin-left: 750px;
+			padding: 40px;
+		}
+		.pro{
+			font-size: 21px;
+			color: gray;
+			padding: 30px;
+			margin-left: 730px;
+		}
+		.tran{
+			font-size: 40px;
+			margin-left: 750px;
+			padding: 20px;
+		}
+		.support{
+			font-size: 21px;
+			color: gray;
+			padding: 30px;
+			margin-left: 730px;
+			padding: 20px;
+		}
+		.pcps{
+			width: 1350px;
+			height: 15px;
+		}
+		.pcps p{
+			font-size: 20px;
+			color: gray;
+			text-align: center;
+			margin-top: 200px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="navbar" >
+		<div class="nav">
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="aboutus.html">ABOUT US</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="services.html">SERVICES</a>
+					<div class="dropdown">
+						<ul>
+							<li><a href="#">Software</a></li>
+							<li><a href="#">Networking</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="title"><h2>PICASOFT</h2></div>
+	<div class="search">
+		<input type="search" name="search">
+	</div>
+	<div class="bar">
+		<div class="barsar">
+			<a href="home.html" class="ahref">Home /</a>
+			<a href="products.html" class="ahref">Products /</a>
+			<a href="cargps.html" class="ahref">Car GPS</a>
+		</div>
+	</div>
+	<div class="body1">
+		<div><img src="truck.jpg" width="500" height="300" class="truck"></div>
+		<div class="specification"><p>Specification</p></div>
+		<div class="mobile"><p>3G/4G Mobile DVR(3G/4GMDVR)a special video recoder,3G/4G video monitor for Vehicle,Train,Linus system,H.264 compression.CIF,HD1,D1,720P,1080.Built-in high performance Hisilicon chipsets,coded with H.264 standard,high compression rate and image quality.4CH AV input with AHD 1080p/720P/960H/D1/CIF optional,1CH synchronized AV output,1CH VGA output.4CH(or 8CH) local recording with 1080p(1080N) resolution in real time.</p></div>
+		<div class="data"><p>Data Storage</p></div>
+		<div class="special">
+			<p>	* Special file management system to encrypt and protect the data.<br>
+				* Proprietary technology to detect the bad track of the hard drive which can make sure the continuity of video and long service life of the hard drive.<br>
+				* Bulit-in ultracapacitor,avoid data loss and sd car damage caused by sudden outage.<br>
+				* Support 2.5 inch HDD/SSD,maximum 2TB<br>
+				* Support SD card stroage, maximum 256GB<br>
+				* Support hard disk heating.</p></div>
+		<div><img src="347.jpg" width="500" height="300" class="phone"></div>
+		<div class="power"><p>Power</p></div>
+		<div class="pro">
+			<p>* Professional In_Vehicle power design ,8-36 DC Wide Voltage Range<br><br>
+			   * Multi protection circuit like under-voltage ,short ,reversed plug-in<br>
+			   * Smart power management system ,shutdown under low voltage ,low consumption</p></div>
+		<div class="tran"><p>Transmission Interface:</p></div>
+		<div class="support">
+			<p>* Support 3G/4G transmission ,LTE/HSUPA/HSDPA/WCDMA/EVDO/TD-SCDMA<br>
+			   * Support GPS/BD optional ,high sensitivity,fast positioning<br>
+			   * Support wireless download by WiFi ,802.11b/g/n,2.4GHz</p></div>
+	</div>
+	<div class="pcps">
+		<p>© 2022 Picasoft Computer & Printing Services</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picasoft</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.navbar{
+			background-color: skyblue;
+			height: 70px;
+		}
+		.nav{
+			margin-left: 400px;
+		}
+		.nav ul{
+			list-style-type: none;
+			display: inline-flex;
+			margin-top: 10px;
+		}
+		.nav ul li{
+			text-align: center;
+			width: 80px;
+			padding: 3px;
+			margin:10px;
+			cursor: pointer;
+		}
+		.nav ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		.dropdown{
+			display: none;
+			width: 100px;
+			background-color: white;
+			margin-top: 28px;
+		}
+		.nav ul li:hover .dropdown{
+			display:block;
+			position: absolute;
+		}
+		.nav ul li:hover .dropdown ul{
+			display: block;
+			list-style-type: none;
+		}
+		.title{
+			margin-top: -50px;
+			margin-left: 90px;
+		}
+		.search{
+			margin-left: 1060px;
+			margin-top: -20px;
+		}
+		.photo1{
+			margin-top: 24px;
+		}
+		.welcome{
+			font-weight: bold;
+			color: black;
+			margin-top: -410px;
+			margin-left: 300px;
+			font-size: 30px;
+		}
+		.popular{
+			margin-top: 350px;
+			height: 60px;
+			text-align: center;
+		}
+		.photo2{
+			margin-left: 150px;
+		}
+		.cargps{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 230px;
+			width: 110px;
+			float: left;
+		}
+		.cargps a{
+			color:black;
+			text-decoration: none;
+		}
+		.cargps h3{
+			margin-left:40px;
+		}
+		.photo3{
+			margin-left:600px;
+			margin-top: -200px;
+		}
+		.desktop{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 340px;
+			width: 110px;
+			float: left;
+		}
+		.desktop h3{
+			margin-left: 35px;
+		}
+		.desktop a{
+			text-decoration: none;
+			color: black;
+		}
+		.photo4{
+			margin-left: 1000px;
+			margin-top: -200px;
+		}
+		.nippon{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 270px;
+			width: 150px;
+			float: left;
+		}
+		.nippon a{
+			text-decoration: none;
+			color: black;
+		}
+		.nippon h3{
+			margin-left: 50px;
+		}
+		.photo5{
+			margin-left: 150px;
+		}
+		.cctv{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 240px;
+			width: 100px;
+			float: left;
+		}
+		.cctv a{
+			text-decoration: none;
+			color: black;
+		}
+		.cctv h3{
+			margin-left: 30px;
+		}
+		.photo6{
+			margin-left: 600px;
+			margin-top: -200px;
+		}
+		.wireless{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 290px;
+			width: 200px;
+			float: left;
+		}
+		.wireless a{
+			text-decoration: none;
+			color: black;
+		}
+		.wireless h3{
+			margin-left:70px; 
+		}
+		.photo7{
+			margin-top: -200px;
+			margin-left: 1000px;
+		}
+		.watch{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 230px;
+			width: 150px;
+			float: left;
+		}
+		.watch a{
+			text-decoration: none;
+			color: black;
+		}
+		.watch h3{
+			margin-left: 50px;
+		}
+		.products button{
+			background-color: #42e0f5;
+			width: 200px;
+			height: 40px;
+			margin-left: 600px;
+		}
+		.gray{
+			background-color: #cfc4c4;
+			width: 1400px;
+			height: 400px;
+			margin-top: 50px;
+		}
+		.t1{
+			text-align: center;
+			padding: 10px;
+		}
+		.photo8{
+			margin-left:90px; 
+		}
+		.speaker{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 150px;
+			float: left;
+			width: 100px;
+		}
+		.speaker a{
+			text-decoration: none;
+			color: black;
+		}
+		.speaker h3{
+			margin-left: 40px;
+		}
+		.photo9{
+			margin-left: 500px;
+			margin-top: -200px;
+		}
+		.keyboard{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 310px;
+			float: left;
+			width: 100px;
+		}
+		.keyboard a{
+			text-decoration: none;
+			color: black;
+		}
+		.keyboard h3{
+			margin-left: 50px;
+		}
+		.photo10{
+			margin-left: 900px;
+			margin-top: -200px;
+		}
+		.powersupply{
+			font-weight: bold;
+			font-size: 25px;
+			margin-left: 300px;
+			float: left;
+			width: 150px;
+		}
+		.powersupply a{
+			text-decoration: none;
+			color: black;
+		}
+		.powersupply h3{
+			margin-left: 60px;
+		}
+		.footer{
+			background-color: black;
+			width: 1400px;
+			height: 500px;
+			color: white;
+		}
+		.aboutus{
+			width: 200px;
+			height: 400px;
+			padding: 50px;
+		}
+		.aboutus p{
+			margin-top: 20px;
+		}
+		.quick{
+			width: 200px;
+			height: 400px;
+			padding: 50px;
+			margin-top: -500px;
+			margin-left: 400px;
+		}
+		.quick a{	
+			text-decoration: none;
+		}
+		.info{
+			width: 200px;
+			height: 400px;
+			padding: 50px;
+			margin-top: -500px;
+			margin-left: 900px;
+		}
+		.pcps{
+			text-align: center;
+			font-size: 20px;
+			color: white;	
+			margin-top: -100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="nav">
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="aboutus.html">ABOUT US</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="services.html">SERVICES</a>
+					<div class="dropdown">
+						<ul>
+							<li><a href="#">Software</a></li>
+							<li><a href="#">Networking</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="title"><h2>PICASOFT</h2></div>
+	<div class="search">
+		<input type="search" name="search">
+	</div>
+	<div class="photo1">
+		<img src="technology1.jpg" width="1400" height="800">
+	</div>
+	<div class="welcome">
+		<h1>WELCOME TO PICASOFT</h1>
+	</div>
+	<div class="popular">
+		<h1>POPULAR PRODUCTS</h1>
+	</div>
+	<div class="photo2">
+		<img src="cargps.jpg" width="250" height="200">
+	</div>
+	<div class="cargps">
+		<a href="cargps.html">Car GPS</a>
+		<h3>$</h3>
+	</div>
+	<div class="photo3">
+		<img src="desktop.jpg" width="250" height="200">
+	</div>
+	<div class="desktop">
+		<a href="#">Desktop</a>
+		<h3>$</h3>
+	</div>
+	<div class="photo4">
+		<img src="nipponlogo.jpg" width="250" height="200">
+	</div>
+	<div class="nippon">
+		<a href="#">Nippon UPS</a>
+		<h3>$</h3>
+	</div>
+	<div class="photo5">
+		<img src="cctv1.jpg" width="250" height="200">
+	</div>
+	<div class="cctv">
+		<a href="#">CCTV</a>
+		<h3>$</h3>
+	</div>
+	<div class="photo6">
+		<img src="wirelessNVR.jpg" width="250" height="200">
+	</div>
+	<div class="wireless">
+		<a href="#">Wireless NVR</a>
+		<h3>$</h3>
+	</div>
+	<div class="photo7">
+		<img src="gpswatch.jpg" width="250" height="200">
+	</div>
+	<div class="watch">
+		<a href="#">GPS Watch</a>
+		<h3>$</h3>
+	</div>
+	<div class="products">
+		<button><a href="products.html">VIEW ALL PRODUCTS</a></button>
+	</div>
+	<div class="gray">
+		<div class="t1"><h1>NEW PRODUCTS</h1></div>
+		<div class="photo8">
+			<img src="speaker_.jpg" width="250" height="200">
+		</div>
+		<div class="speaker">
+			<a href="#">Speaker</a>
+			<h3>$</h3>
+		</div>
+		<div class="photo9">
+			<img src="keyboard.png" width="250" height="200">
+		</div>
+		<div class="keyboard">
+			<a href="#">Keyboard</a>
+			<h3>$</h3>
+		</div>
+		<div class="photo10">
+			<img src="powersupply.jpg" width="250" height="200">
+		</div>
+		<div class="powersupply">
+			<a href="#">Power Supply</a>
+			<h3>$</h3>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="aboutus">
+			<h2>About Us</h2><br><br>
+			<p>Picasoft Co.,Ltd(PCS)was established in 2005.We involves in ICT business activities in Myanmar -importing and distributing of IT,teelecom products and services,electronic applicances,Printing Services,Software Solution.</p>
+		</div>
+		<div class="quick">
+			<h2>Quick Links</h2><br><br>
+			<a href="aboutus.html">About</a><br><br>
+			<a href="#">Feature</a><br><br>
+			<a href="products.html">Products</a><br><br>
+			<a href="services.html">Services</a><br><br>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<div class="info">
+			<h2>Contact Info</h2><br><br>
+			<p>No 8 B gf,Ba Yint Naung Street,Yangon thir,Thuwunna,Yangon,11072</p><br><br>
+			<p>09793214976</p><br><br>
+			<p>picasoft@gmail.com</p><br><br>
+			<p>view on facebook</p>
+		</div>
+		<div class="pcps">
+		<p>© 2022 Picasoft Computer & Printing Services</p>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
